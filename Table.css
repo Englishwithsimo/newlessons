@@ -21,13 +21,13 @@
                   }
 
        tr:nth-child(odd) {
-           background-color: yellow;
+           background-color: silver;
        }
         tr:nth-child(even) {
-           background-color: yellow;
+           background-color: silver;
        }
 td:nth-child(even) {
-           background-color: yellow;
+           background-color: silver;
            color:red;
        }
        @media screen and (max-width: 600px) {
