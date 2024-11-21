@@ -5,6 +5,7 @@
     border-right: 30px solid blue;
     background-color:lightblue;
     font-size:large;
+    text-align:justify;
   }
   .sections{
     direction:rtl;
