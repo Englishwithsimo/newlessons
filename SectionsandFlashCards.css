@@ -65,6 +65,7 @@
             font-size: 1.1em;
             margin-bottom: 5px;
             color: #333;
+            font-weight:bold;
             padding-bottom: 5px;
             border-bottom: 1px solid #ccc;
         }
@@ -74,6 +75,7 @@
             color: #666;
             font-family: 'Arial', sans-serif;
             padding-top: 5px;
+            font-weight:bold;
         }
 
         @media (max-width: 1200px) {
