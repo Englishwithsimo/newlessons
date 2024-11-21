@@ -9,13 +9,14 @@
            padding: 10px;
            text-align: center;
            margin: 0 auto; /* Added margin auto */
+           font-weight:bold;
        }
 
        th {
            background-color: #f5f5f5;
            font-weight: bold;
            background-color:tan;
-       }
+                  }
 
        tr:nth-child(odd) {
            background-color: orange;
@@ -23,7 +24,10 @@
         tr:nth-child(even) {
            background-color: yellow;
        }
-
+td:nth-child(even) {
+           background-color: yellow;
+           color:red;
+       }
        @media screen and (max-width: 600px) {
            th, td {
                padding: 8px;
