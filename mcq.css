@@ -1,0 +1,57 @@
+.sentence {
+            margin-bottom: 15px;
+        }
+
+        select {
+            margin: 0 10px;
+            padding: 5px;
+        }
+
+        button {
+            margin: 20px 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .check-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .clear-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .check {
+            margin-left: 10px;
+        }
+
+        .correct {
+            background-color: #e8f5e9;
+            border-color: #4CAF50;
+        }
+
+        .incorrect {
+            background-color: #ffebee;
+            border-color: #f44336;
+        }
+
+        #score {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+      .mcq-container{
+        background-color:khaki;
+        padding:10px;
+        border-left: 15px solid black;
+        border-radius: 10px;
+        line-height:200%;
+      }
