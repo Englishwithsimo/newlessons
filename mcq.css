@@ -54,4 +54,6 @@
         border-left: 15px solid black;
         border-radius: 10px;
         line-height:200%;
+        direction:ltr;
+        text-align:left;
       }
