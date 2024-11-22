@@ -1,10 +1,11 @@
-.drag-drop {
+ .drag-drop {
             padding: 10px;
             max-width: 800px;
             margin: 0 auto;
           border-left:15px solid black;
           background-color:khaki;
           border-radius:15px;
+            direction:ltr;
         }
 
         .question {
@@ -29,6 +30,8 @@
             display: inline-block;
           font-size:large;
           font-weight:bold;
+          border:0px solid black;
+
         }
         .sentence {
             align-items: center;
