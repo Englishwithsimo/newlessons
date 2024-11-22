@@ -1,0 +1,108 @@
+.drag-drop {
+            padding: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+          border-left:15px solid black;
+          background-color:khaki;
+          border-radius:15px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            font-weight: bold;
+          font-size:large;
+          color:navy;
+        }
+        .draggable-words {
+            margin: 20px 0;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+          color:black;
+        }
+        .word {
+            cursor: move;
+            user-select: none;
+            display: inline-block;
+          font-size:large;
+          font-weight:bold;
+        }
+        .sentence {
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+          font-size:large;
+          line-height:200%;
+        }
+        .dropzone {
+            border-bottom: 1px solid white;
+            width: 100px;
+          max-width:100px;
+            height: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+        }
+        .correct {
+            background-color: #90EE90;
+        }
+
+        .incorrect {
+            background-color: #FFB6C1;
+        }
+
+        .result-icon {
+            margin-left: 10px;
+        }
+
+        .buttons {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .score-btn {
+            background-color: #4CAF50;
+        }
+
+        .clear-btn {
+            background-color: #f44336;
+        }
+
+        .score-display {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .sentence {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .dropzone {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
