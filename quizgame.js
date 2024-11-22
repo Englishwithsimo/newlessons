@@ -1,4 +1,4 @@
-let currentQuestion = 0;
+ let currentQuestion = 0;
         let score = 0;
         let selectedAnswer = "";
 
@@ -7,7 +7,7 @@ let currentQuestion = 0;
             const quizContent = document.getElementById('quiz-content');
             
             const content = `
-                <p class="sentence">${question.sentence}</p>
+                <p class="sentence1">${question.sentence1}</p>
                 <div class="options">
                     ${question.options.map(option => `
                         <button class="option-btn ${selectedAnswer === option ? 'selected' : ''}" 
