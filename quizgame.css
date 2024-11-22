@@ -5,6 +5,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          direction:ltr;
         }
         
         .quiz-title {
@@ -12,15 +13,17 @@
             margin-bottom: 20px;
             color: #333;
           color:tomato;
+          direction:ltr;
         }
         
-        .sentence {
+        .sentence1 {
             font-size: large;
             margin-bottom: 20px;
             line-height: 1.5;
           text-align:center;
           font-weight:bold;
           color:navy;
+          direction:ltr;
         }
         
         .options {
