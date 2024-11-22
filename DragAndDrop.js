@@ -1,8 +1,15 @@
-let dragged = null;
+(function() {
+        let dragged = null;
+        const exerciseId = 'exercise-' + Math.random().toString(36).substr(2, 9);
 
         document.addEventListener('DOMContentLoaded', () => {
-            const words = document.querySelectorAll('.word');
-            const dropzones = document.querySelectorAll('.dropzone');
+            const container = document.querySelector('.drag-drop');
+            container.id = exerciseId;
+            
+            const words = container.querySelectorAll('.word');
+            const dropzones = container.querySelectorAll('.dropzone');
+            const scoreBtn = container.querySelector('.score-btn');
+            const clearBtn = container.querySelector('.clear-btn');
 
             words.forEach(word => {
                 word.addEventListener('dragstart', handleDragStart);
@@ -13,6 +20,9 @@ let dragged = null;
                 dropzone.addEventListener('dragover', handleDragOver);
                 dropzone.addEventListener('drop', handleDrop);
             });
+
+            scoreBtn.addEventListener('click', checkAnswers);
+            clearBtn.addEventListener('click', clearAnswers);
         });
 
         function handleDragStart(e) {
@@ -38,7 +48,8 @@ let dragged = null;
 
         function checkAnswers() {
             let score = 0;
-            const dropzones = document.querySelectorAll('.dropzone');
+            const container = document.getElementById(exerciseId);
+            const dropzones = container.querySelectorAll('.dropzone');
             
             dropzones.forEach((dropzone) => {
                 const correctAnswer = dropzone.dataset.correct;
@@ -60,12 +71,13 @@ let dragged = null;
                 }
             });
 
-            document.querySelector('.score-display').textContent = `Score: ${score}/${dropzones.length}`;
+            container.querySelector('.score-display').textContent = `Score: ${score}/${dropzones.length}`;
         }
 
         function clearAnswers() {
-            const dropzones = document.querySelectorAll('.dropzone');
-            const draggableWords = document.querySelector('.draggable-words');
+            const container = document.getElementById(exerciseId);
+            const dropzones = container.querySelectorAll('.dropzone');
+            const draggableWords = container.querySelector('.draggable-words');
             
             dropzones.forEach(dropzone => {
                 if (dropzone.children.length > 0) {
@@ -77,5 +89,6 @@ let dragged = null;
                 resultIcon.textContent = '';
             });
             
-            document.querySelector('.score-display').textContent = '';
+            container.querySelector('.score-display').textContent = '';
         }
+    })();
