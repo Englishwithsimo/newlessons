@@ -7,6 +7,15 @@
     font-size:large;
     text-align:justify;
   }
+.guide{
+    direction:rtl;
+    padding:20px;
+    line-height:200%;
+    border-right: 30px solid red;
+    background-color:khaki;
+    font-size:large;
+    text-align:justify;
+}
   .sections{
     direction:rtl;
     text-align:center;
