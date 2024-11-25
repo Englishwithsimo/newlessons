@@ -1,8 +1,9 @@
- table {
-           width: 100%;
+  table {
+           width: auto;
            border-collapse: collapse;
-           min-width: 400px; /* Minimum width before scrolling */
+           min-width: 300px; /* Minimum width before scrolling */
            direction:ltr;
+             margin: 0 auto;
        }
 
        th, td {
@@ -36,9 +37,8 @@ td:nth-child(even) {
                font-size: 14px;
            }
        }
-       @media screen and (max-width: 400px) {
+       @media screen and (max-width: 300px) {
            th, td {
-               padding: 8px;
-               font-size: 10px;
+             font-size: small;
            }
        }
