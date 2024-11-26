@@ -1,9 +1,10 @@
-  table {
-           width: auto;
-           border-collapse: collapse;
-           min-width: 300px; /* Minimum width before scrolling */
-           direction:ltr;
+table {
+             width: 100%;
+               border-collapse: collapse;
+              min-width: 300px; /* Minimum width before scrolling */
+             direction:ltr;
              margin: 0 auto;
+             line-height:100%;
        }
 
        th, td {
