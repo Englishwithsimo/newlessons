@@ -4,7 +4,7 @@ table {
               min-width: 300px; /* Minimum width before scrolling */
              direction:ltr;
              margin: 0 auto;
-             line-height:100%;
+             line-height:200%;
        }
 
        th, td {
