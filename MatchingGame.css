@@ -6,7 +6,7 @@
            direction:ltr;
             background-color:FloralWhite;
             padding:20px;
-            border-left:20px solid black
+            border-left:20px solid black;
            text-align:left;
            width:100%;
            }
@@ -16,7 +16,7 @@
            flex-direction: column;
            gap: 15px;
            flex: 1;
-           max-width: 45%;
+           max-width: 100%;
        }
 
        .word {
